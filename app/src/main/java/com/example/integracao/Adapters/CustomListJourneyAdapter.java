@@ -13,13 +13,12 @@ import com.example.integracao.Models.WeekDay;
 import com.example.integracao.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class CustomListAdapter extends ArrayAdapter<WeekDay> {
+public class CustomListJourneyAdapter extends ArrayAdapter<WeekDay> {
 
     private ArrayList<WeekDay> weekDays;
 
-    public CustomListAdapter(Context context, int textViewResourceId, ArrayList<WeekDay> objects) {
+    public CustomListJourneyAdapter(Context context, int textViewResourceId, ArrayList<WeekDay> objects) {
         super(context, textViewResourceId, objects);
         this.weekDays = objects;
     }

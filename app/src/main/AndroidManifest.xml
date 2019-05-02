@@ -19,9 +19,17 @@
             </intent-filter>
         </activity>
         <activity
-        android:name=".JourneyRegisterActivity"
-        android:label="@string/app_name" >
-    </activity>
+            android:name=".JourneyRegisterActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".TaskRegisterActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".DayRegisterActivity"
+            android:label="Registro de atividade"></activity>
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/app_name"></activity>
     </application>
 
 </manifest>

@@ -5,16 +5,12 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.SimpleAdapter;
 
-import com.example.integracao.Adapters.CustomListAdapter;
+import com.example.integracao.Adapters.CustomListJourneyAdapter;
 import com.example.integracao.Models.WeekDay;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 public class JourneyRegisterActivity extends ListActivity {
 
@@ -36,7 +32,7 @@ public class JourneyRegisterActivity extends ListActivity {
         }
         String[] from = {"week_day"};
 
-        CustomListAdapter myAdapter = new CustomListAdapter(getBaseContext(), R.layout.listview_journey_layout, this.weekDays);
+        CustomListJourneyAdapter myAdapter = new CustomListJourneyAdapter(getBaseContext(), R.layout.listview_journey_layout, this.weekDays);
         setListAdapter(myAdapter);
 
         this.btnSave = (Button) findViewById(R.id.btn_save_journey);
